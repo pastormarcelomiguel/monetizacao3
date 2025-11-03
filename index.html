@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Canal - Rilostriker</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: "Roboto", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e1e1e;
+      padding: 10px 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-left img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .header-left span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .user-avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .main {
+      padding: 15px;
+    }
+
+    .channel-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .channel-info img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .channel-info h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .channel-info p {
+      margin: 2px 0;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #999;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .money {
+      color: #00ff66;
+      font-weight: bold;
+    }
+
+    .resgatar-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 15px;
+      background-color: #006400; /* verde escuro */
+      color: #fff;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .resgatar-btn:hover {
+      background-color: #004d00;
+    }
+
+    .content h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .video {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 8px;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .video img {
+      width: 100px;
+      height: 65px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-info h4 {
+      font-size: 13px;
+      margin: 0;
+      color: #fff;
+    }
+
+    .video-info p {
+      font-size: 12px;
+      color: #aaa;
+      margin: 3px 0;
+    }
+
+    .video-stats {
+      font-size: 11px;
+      color: #ccc;
+    }
+
+    .earnings {
+      font-size: 13px;
+      color: #00ff66;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #777;
+      border-top: 1px solid #333;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 450px) {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+      .video img {
+        width: 90px;
+        height: 60px;
+      }
+      .video-info h4 {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+      <span>Studio</span>
+    </div>
+    <img class="user-avatar" src="rilostriker.jpg" alt="Avatar">
+  </div>
+
+  <div class="main">
+    <div class="channel-info">
+      <img src="rilostriker.jpg" alt="Avatar">
+      <div>
+        <h2>Rilostriker</h2>
+        <p>259 inscritos</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="card">
+        <h3>Visualizações</h3>
+        <p>2,1 mil</p>
+      </div>
+      <div class="card">
+        <h3>Tempo de exibição (h)</h3>
+        <p>5,7</p>
+      </div>
+      <div class="card">
+        <h3>Receita total</h3>
+        <p class="money">R$ 2,52</p>
+        <a href="https://wa.me/5511960679529?text=Ol%C3%A1!%20%F0%9F%98%83%20Tudo%20bem%3F%20Quero%20resgatar%20AGORA%20minha%20receita%20total%20do%20YouTube%2C%20que%20%C3%A9%20R%242%2C52%20%F0%9F%92%B8%F0%9F%92%B0%F0%9F%92%B5%F0%9F%8E%89.%20Obrigado(a)%20pelo%20atendimento!%20%F0%9F%99%8F%F0%9F%9A%80" target="_blank" class="resgatar-btn">Resgatar</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>Conteúdo publicado recentemente</h3>
+
+      <div class="video">
+        <img src="https://i.ytimg.com/vi/placeholder1.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>só quem joga FF apostado vai entender!! #a...</h4>
+          <p>há 6 dias</p>
+          <div class="video-stats">708 views · 6 likes · 1 comentário</div>
+          <div class="earnings">R$ 0,07</div>
+        </div>
+      </div>
+
+      <div class="video">
+        <img src="https://i.ytimg.com/vi/placeholder2.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>defesas assim e até satisfatório assistir #clash...</h4>
+          <p>há 2 semanas</p>
+          <div class="video-stats">1.200 views · 24 likes · 6 comentários</div>
+          <div class="earnings">R$ 0,12</div>
+        </div>
+      </div>
+
+      <div class="video">
+        <img src="https://i.ytimg.com/vi/placeholder3.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>Se eu não fizer HAT TRICK eu excluo o canal (três seguidas)</h4>
+          <p>há 4 semanas</p>
+          <div class="video-stats">10 views · 0 likes · 0 comentários</div>
+          <div class="earnings">R$ 0,10</div>
+        </div>
+      </div>
+
+      <div class="video">
+        <img src="https://i.ytimg.com/vi/placeholder4.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>CONSEGUI UPAR ATÉ LEVEL MÁXIMO? - Roblox anime...</h4>
+          <p>há 2 meses</p>
+          <div class="video-stats">36 views · 1 like · 0 comentários</div>
+          <div class="earnings">R$ 0,36</div>
+        </div>
+      </div>
+
+      <div class="video">
+        <img src="https://i.ytimg.com/vi/placeholder5.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>Tentando NÃO ser roubado o jogo inteiro - Roube um...</h4>
+          <p>há 2 meses</p>
+          <div class="video-stats">76 views · 3 likes · 2 comentários</div>
+          <div class="earnings">R$ 0,76</div>
+        </div>
+      </div>
+
+      <div class="video">
+        <img src="https://i.ytimg.com/vi/placeholder6.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>TRES BOSSES DERROTADOS muito fácil - Anime Last...</h4>
+          <p>há 5 meses</p>
+          <div class="video-stats">111 views · 13 likes · 2 comentários</div>
+          <div class="earnings">R$ 1,11</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 - Painel de estatísticas do canal Rilostriker
+  </footer>
+</body>
+</html>
